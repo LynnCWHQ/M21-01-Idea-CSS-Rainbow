@@ -1,0 +1,93 @@
+/* preset body styles */
+
+body {
+    background-color: skyblue;
+    background-image: url('images/landscape-background-2.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* preset container styles - if time, introduce overflow: hidden */
+.container {
+    width: 640px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* students style rainbow divs by class and id.
+Reminders: border-radius to make a square into a circle, position absolute.
+Note to instructors, have students copy/paste/edit to get the layer code done in time. */
+.rainbow {
+    position: absolute;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    background: transparent;
+}
+
+#layer-7 {
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    border-color: red;
+}
+
+#layer-6 {
+    top: 20px;
+    left: 20px;
+    width: 560px;
+    height: 560px;
+    border-color: orange;
+}
+
+#layer-5 {
+    top: 40px;
+    left: 40px;
+    width: 520px;
+    height: 520px;
+    border-color: yellow;
+}
+
+#layer-4 {
+    top: 60px;
+    left: 60px;
+    width: 480px;
+    height: 480px;
+    border-color: green;
+}
+
+#layer-3 {
+    top: 80px;
+    left: 80px;
+    width: 440px;
+    height: 440px;
+    border-color: blue;
+}
+
+#layer-2 {
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+    border-color: indigo;
+}
+
+#layer-1 {
+    top: 120px;
+    left: 120px;
+    width: 360px;
+    height: 360px;
+    border-color: blueviolet;
+}
+
+/*Bonus or Homework - activate the rainbow with :hover */
+
+.container:hover {
+    opacity: 0.5;
+    transition: 1s all linear;
+}
+

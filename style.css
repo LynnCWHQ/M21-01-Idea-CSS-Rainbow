@@ -1,13 +1,33 @@
-/* preset body styles */
+/* preset styles */
+@font-face {
+    font-family: 'FatfontInline';
+    src: url('fonts/FatfontInline.woff2') format('woff2'),
+        url('fonts/FatfontInline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     background-color: skyblue;
-    background-image: url('images/landscape-background-2.png');
+    background-image: url('images/landscape-bg.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
+    flex-direction: column;
+    font-family: 'FatfontInline';
+}
+
+h1 {
+    margin: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px skyblue;
 }
 
 /* preset container styles - if time, introduce overflow: hidden */
@@ -91,3 +111,4 @@ Note to instructors, have students copy/paste/edit to get the layer code done in
     transition: 1s all linear;
 }
 
+/* Use the <span> tag to color the words in the heading */
